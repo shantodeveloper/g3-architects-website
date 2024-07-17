@@ -210,7 +210,74 @@ footer {
 }
 
 /*responsive nav item small divise*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
+  .nav,
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner-titel {
+    font-size: 3rem;
+  }
+
+  .nav-links {
+    margin-right: 60px;
+    line-height: 30px;
+  }
+
+  .nav-links a {
+    font-size: 1.8rem;
+  }
+
+  /*future-section*/
+  .future-section {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .image-container {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+
+  .section-details {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .image-container img {
+    width: 100%;
+  }
+  .box-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    text-align: center;
+  }
+
+  .image-container2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-expriance {
+    width: 10rem;
+    height: auto;
+    margin: -50px auto;
+  }
+
+  .fact-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sponsor-img {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
   .nav,
   .nav-links {
     flex-direction: column;
